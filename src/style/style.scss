@@ -1,0 +1,107 @@
+// Библиотеки (опционально)
+@import '~normalize.css';
+@import '~nouislider';
+@import '~tippy.js/dist/tippy.css';
+@import '~hystmodal/dist/hystmodal.min.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+// Утилиты
+@import 'variables.scss';
+@import 'breakpoints.scss';
+@import 'keyframes.scss';
+@import 'global.scss';
+
+// Основные стили
+@import '~@/components/components';
+@import '~@/mixins/mixins';
+@import 'temp'; // < ВРЕМЕННЫЕ СТИЛИ
+
+html {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-size: 1rem;
+  overflow-x: hidden;
+  
+  font-size: 14px;
+  color: $text-4;
+  background-color: $darkGray;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// скролл
+*:not(body) {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border: solid 3px transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.72);
+    border: solid 3px transparent;
+    border-radius: 8px;
+  }
+}
+
+.svg-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.container {
+  max-width: 1540px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.header-container{
+  max-width: 1500px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 43px 30px;
+}
+
+.circle {
+  border: 1px solid $my-grey;
+  border-radius: 100%;
+  min-width: 32px;
+  max-width: 32px;
+  min-height: 32px;
+  max-height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    position: relative;
+    right: 1px;
+    width: 20px;
+    height: 20px;
+    fill: $my-grey;
+  }
+}

@@ -1,0 +1,10 @@
+mixin Header(param = {})
+
+    header.header.header-container
+        .header__logo
+            img(src="/assets/img/contents/logo.png", alt="")
+        .header__nav    
+            ul 
+                each link in ['Home', 'Episodes', 'About', 'Contact']
+                    li
+                        a(href="#")=link

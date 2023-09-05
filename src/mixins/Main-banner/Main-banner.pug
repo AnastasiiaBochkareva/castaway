@@ -1,0 +1,26 @@
+mixin Main-banner(param={})
+    .main-banner.pt-40
+        .main-banner__col
+            .main-banner__img
+                img(src="/assets/img/contents/main-banner.png", alt="main-banner")
+            .main-banner__svg
+                +icon('lines-main-banner')
+        .main-banner__col
+            .main-banner__title Take your podcast to the 
+                .main-banner__var-one next
+                    +icon('underline')
+                .main-banner__var-two level
+            .main-banner__services
+                span Listen on
+                .main-banner__links 
+                    a(href='#') 
+                        img(src="/assets/img/svg/resource-1.svg", alt="")
+                    a(href='#') 
+                        img(src="/assets/img/svg/resource-2.svg", alt="")
+                    a(href='#') 
+                        img(src="/assets/img/svg/resource-3.svg", alt="")
+                    a(href='#') 
+                        img(src="/assets/img/svg/resource-4.svg", alt="")
+                    a(href='#') 
+                        img(src="/assets/img/svg/resource-5.svg", alt="")
+

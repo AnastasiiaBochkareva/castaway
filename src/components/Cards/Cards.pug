@@ -1,0 +1,33 @@
+.cards.pt-100.pb-160
+    .cards__top
+        .cards__title.title Latest episodes
+        button.button View all episodes
+    -           
+        const testArray = [
+            {
+                tag: 'Gear',
+                episode: 'Episode 3',
+                title: 'Should you get outboard audio gear?',
+                subtitle: 'Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.'
+            }, 
+            {
+                tag: 'Tips & Tricks',
+                episode: 'Episode 2',
+                title: 'Mic tricks to take you to the next level',
+                subtitle: 'Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.'
+            }, 
+            {
+                tag: 'Gear',
+                episode: 'Episode 1',
+                title: 'The best microphone under $200',
+                subtitle: 'With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.'
+            }
+            ]
+    div
+        each card in testArray
+            +Product-card({
+                tag: card.tag,
+                episode: card.episode,
+                title: card.title,
+                subtitle: card.subtitle
+            })

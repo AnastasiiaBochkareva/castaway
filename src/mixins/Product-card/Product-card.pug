@@ -1,0 +1,11 @@
+mixin Product-card(param={})
+    .product-card
+        .product-card__col
+            img(src="/assets/img/contents/card-1.png", alt="main-banner")
+        .product-card__col
+            button.button-tag.product-card__tag=param.tag
+            .product-card__episode=param.episode
+            .product-card__title.title=param.title.title
+            .product-card__subtitle=param.subtitle
+            button.button.product-card__btn View Episode Details
+        

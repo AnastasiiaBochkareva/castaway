@@ -1,0 +1,13 @@
+.cards{
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 66px;
+    }
+    >div{
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+    }
+}
