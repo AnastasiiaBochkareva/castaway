@@ -1,0 +1,14 @@
+.subscribe.bg-black
+    .subscribe__col
+        .subscribe__link
+            a(href="#") Email Newsletter
+        .subscribe__title.title Subscribe for updates 
+        +icon('lines-subscribe')
+    .subscribe__col
+        form.form
+            .form__row
+                +Input({ placeholder: 'Name', required: true })
+            .form__row
+                +Input({ placeholder: 'Email', required: true, type: email })
+            .form__row
+                button.button Submit

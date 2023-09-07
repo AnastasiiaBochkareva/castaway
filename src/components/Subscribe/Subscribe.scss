@@ -1,0 +1,8 @@
+.subscribe{
+    padding: 60px 60px 75px;
+    display: flex;
+    justify-content: space-between;
+    &__col{
+        width: calc(50% - 16px);
+    }
+}

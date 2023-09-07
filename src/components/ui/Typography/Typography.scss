@@ -62,6 +62,10 @@ a {
   text-decoration: none;
   position: relative;
   transition: color $transition;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 
   > * {
     cursor: pointer;

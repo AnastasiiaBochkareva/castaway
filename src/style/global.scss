@@ -6,6 +6,10 @@
     padding-top: 100px;
 }
 
+.pb-100{
+    padding-bottom: 100px;
+}
+
 .pb-160{
     padding-bottom: 160px;
 }
@@ -22,11 +26,16 @@
 .button{
     border-radius: 6px;
     background: #118DA8;
-    width: 178px;
+    padding: 12px 15px 12px 20px;
     height: 51px;
     color: $text-4;
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: 158.824%;
+}
+
+.bg-black{
+    background-color: $black;
+    border-radius: 32px;
 }

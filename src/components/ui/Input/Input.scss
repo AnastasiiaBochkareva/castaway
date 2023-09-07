@@ -128,7 +128,7 @@
     content: '';
     position: absolute;
     inset: 0px;
-    border: 1px solid $ui-gray-1;
+    border: 1px solid $darkGray;
     border-radius: $border-radius;
     user-select: none;
     pointer-events: none;
@@ -153,8 +153,8 @@
     border-radius: $border-radius;
     //border: 1px solid $ui-gray-1;
     border: none;
-    background-color: $ui-white;
-    padding: 11px 12px;
+    background-color: $darkGray;
+    padding: 26px 19px 27px;
     font-size: 1rem;
     line-height: 1.467rem;
 
@@ -164,15 +164,15 @@
       border-width: 2px;
     }
 
-    &:required {
-      +.input__placeholder::before {
-        content: '*';
-        position: absolute;
-        top: -5px;
-        right: -10px;
-        color: $text-error;
-      }
-    }
+    // &:required {
+    //   +.input__placeholder::before {
+    //     content: '*';
+    //     position: absolute;
+    //     top: -5px;
+    //     right: -10px;
+    //     color: $text-error;
+    //   }
+    // }
 
     &:focus,
     &:not(:placeholder-shown) {
@@ -187,11 +187,13 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 11px;
-    color: $text-3;
+    left: 19px;
+    color: rgba(255, 255, 255, 0.70);;
     cursor: text;
-    font-size: 1rem;
-    line-height: 22px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
     transition: top $transition,
                 font-size $transition;
   }
