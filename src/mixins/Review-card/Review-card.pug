@@ -1,0 +1,7 @@
+mixin Review-card(param={})
+    .review-card.bg-black
+        .review-card__rating
+            each svg in Array(5)
+                img(src="/assets/img/svg/star.svg", alt="")
+        .review-card__text.title-sm=param.text
+        .review-card__user.subtitle=param.user

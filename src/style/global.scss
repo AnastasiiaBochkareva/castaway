@@ -23,11 +23,27 @@
     letter-spacing: 2.56px;
 }
 
+.title-sm{
+    color: $text-4;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.subtitle{ 
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 150%;
+}
+
 .button{
     border-radius: 6px;
     background: #118DA8;
     padding: 12px 15px 12px 20px;
-    height: 51px;
+    width: max-content;
+    height: max-content;
     color: $text-4;
     font-size: 17px;
     font-style: normal;

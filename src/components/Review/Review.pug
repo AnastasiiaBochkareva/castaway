@@ -1,0 +1,33 @@
+.review
+    -
+        const reviewCards = [
+            {
+                text: 'I can’t recommend this podcast enough',
+                user: 'Betty Lacey',
+            },
+            {
+                text: 'Jacob is the best in the business',
+                user: 'Adam Driver',
+            },
+            {
+                text: 'A wealth of audio knowledge',
+                user: 'Marcus Brown',
+            },
+            {
+                text: 'Every episode is a gem!',
+                user: 'Jessica Knowl',
+            },
+            {
+                text: 'Whoa whoa, let me take some notes!',
+                user: 'Scott Adams',
+            },
+            {
+                text: 'I’ve upped my game considerably since I started listeningI can’t recommend this podcast enough',
+                user: 'Steven Blast',
+            }
+            ]
+    each card in reviewCards 
+        +Review-card({
+            text: card.text,
+            user: card.user 
+    })

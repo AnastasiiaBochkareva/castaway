@@ -1,8 +1,15 @@
 .subscribe{
     padding: 60px 60px 75px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     &__col{
         width: calc(50% - 16px);
+    }
+    @media (max-width: 1000px){
+        flex-direction: column;
+        &__col{
+            width: 100%;
+        }
     }
 }

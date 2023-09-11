@@ -1,11 +1,10 @@
 mixin Product-card(param={})
     .product-card.bg-black
-        .product-card__col
+        .product-card__img
             img(src="/assets/img/contents/card-1.png", alt="main-banner")
-        .product-card__col
-            button.product-card__tag=param.tag
-            .product-card__episode=param.episode
-            .product-card__title.title=param.title
-            .product-card__subtitle=param.subtitle
-            button.button.product-card__btn View Episode Details
+        button.product-card__tag=param.tag
+        .product-card__episode=param.episode
+        .product-card__title.title=param.title
+        .product-card__subtitle.subtitle=param.subtitle
+        button.button.product-card__btn View Episode Details
         

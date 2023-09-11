@@ -58,7 +58,7 @@ p {
 }
 
 a {
-  color: $text-5;
+  color: $text-4;
   text-decoration: none;
   position: relative;
   transition: color $transition;
@@ -82,6 +82,9 @@ a {
     }
     &_light {
       color: $text-4;
+    }
+    &_blue{
+      color: $text-5;
     }
 
     // Modifications
