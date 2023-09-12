@@ -3,9 +3,12 @@ mixin Footer(param={})
         .footer__logo
             img(src="/assets/img/svg/logo.svg", alt="")
         .footer__social
-            img(src="/assets/img/svg/instagram.svg", alt="")
-            img(src="/assets/img/svg/twitter.svg", alt="")
-            img(src="/assets/img/svg/facebook.svg", alt="")
+            button 
+                img(src="/assets/img/svg/instagram.svg", alt="")
+            button 
+                img(src="/assets/img/svg/twitter.svg", alt="")
+            button 
+                img(src="/assets/img/svg/facebook.svg", alt="")
         .footer__item
             each el in ['Home', 'About', 'Episodes', 'Contact']
                 a(href="#")=el
@@ -13,13 +16,13 @@ mixin Footer(param={})
             each link in ['Style Guide', 'Instructions', 'Changelog', 'Credit', 'Powered by Webflow', 'Licenses']
                 a(href="#")=link
         .footer__resources
-            a(href='#') 
+            button
                 img(src="/assets/img/svg/resource-1.svg", alt="")
-            a(href='#') 
+            button
                 img(src="/assets/img/svg/resource-2.svg", alt="")
-            a(href='#') 
+            button
                 img(src="/assets/img/svg/resource-3.svg", alt="")
-            a(href='#') 
+            button
                 img(src="/assets/img/svg/resource-4.svg", alt="")
-            a(href='#') 
+            button
                 img(src="/assets/img/svg/resource-5.svg", alt="")

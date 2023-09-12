@@ -1,14 +1,15 @@
 .subscribe.bg-black
     .subscribe__col
         .subscribe__link
-            a(href="#") Email Newsletter
+            a(href="#").link_blue Email Newsletter
         .subscribe__title.title Subscribe for updates 
-        +icon('lines-subscribe')
+        .subscribe__img
+            img(src="/assets/img/svg/lines-bottom.svg", alt="")
     .subscribe__col
         form.form
             .form__row
-                +Input({ placeholder: 'Name', required: true })
+                +Input({ placeholder: 'Name', required: true, type: 'text' })
             .form__row
-                +Input({ placeholder: 'Email', required: true, type: email })
+                +Input({ placeholder: 'Email', required: true, type: 'email' })
             .form__row
-                button.button Submit
+                button.button.button_animation Submit

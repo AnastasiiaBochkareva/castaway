@@ -131,3 +131,23 @@ mixin Input(param = {})
                 data-row=param.row || 2
             )
             label(for=param.id).input__placeholder #{param.placeholder}
+
+    // - TYPE EMAIL
+    - if (param.type === 'email')
+        .input(
+            class=param.status ? 'input_' + param.status : ''
+            class=param.size ? 'input_' + param.size : ''
+            class=param.mode ? 'input_' + param.mode : ''
+            class=param.class
+        )
+            input(
+                type="email"
+                id=param.id
+                name=param.name
+                placeholder=" "
+                disabled=param.disabled
+                class=param.inputClass
+                required=param.required
+                data-mask=param.mask
+            )
+            label(for=param.id).input__placeholder #{param.placeholder}

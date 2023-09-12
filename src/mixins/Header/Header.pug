@@ -5,6 +5,6 @@ mixin Header(param = {})
             img(src="/assets/img/contents/logo.png", alt="")
         .header__nav    
             ul 
-                each link in ['Home', 'Episodes', 'About', 'Contact']
+                each link, i in ['Home', 'Episodes', 'About', 'Contact']
                     li
-                        a(href="#")=link
+                        a(href="#" class= i === 0 ? 'link_blue' : '')=link
