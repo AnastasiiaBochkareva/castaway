@@ -78,6 +78,10 @@ ul {
   margin-right: auto;
   padding-left: 50px;
   padding-right: 50px;
+  @include sm{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .header-container{
   max-width: 1500px;
@@ -85,6 +89,9 @@ ul {
   margin-left: auto;
   margin-right: auto;
   padding: 43px 30px;
+  @include xs{
+    padding: 23px 30px;
+  }
 }
 
 .circle {

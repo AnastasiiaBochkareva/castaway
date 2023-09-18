@@ -72,4 +72,15 @@
             grid-column-start: 2;
         }
     }
+    @media (max-width: 400px){
+        &__links{
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 1;
+        }
+        &__resources{
+            grid-row-start: 6;
+            grid-column-start: 1;
+        }
+    }
 }

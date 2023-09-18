@@ -18,8 +18,7 @@
     &__img{
         max-width: 650px;
         width: 100%;
-        // height: 873px;
-        height: 45.47vw;
+        height: 873px;
         overflow: hidden;
         position: relative;
         border-radius: 12px;
@@ -38,14 +37,10 @@
         svg{
             position: absolute;
             fill: $text-5;
-            // top: 14px;
-            top: 0.73vw;
-            // left: -26px;
-            left: -1.35vw;
-            // width: 68px;
-            width: 3.54vw;
-            // height: 74px;
-            height: 3.85vw;
+            top: 14px;
+            left: -26px;
+            width: 68px;
+            height: 74px;
         }
     }
     &__title{
@@ -61,8 +56,7 @@
             fill: $text-5;
             // width: 160px;
             width: 8.33vw;
-            // height: 104px;
-            height: 5.42vw;
+            height: 104px;
             position: absolute;
             left: 0;
         }
@@ -92,6 +86,61 @@
             &:hover img{
                 transform: scale(1.1);
     
+            }
+        }
+    }
+    @media (max-width: 1336px){
+        column-gap: 20px;
+        justify-content: space-between;
+        &__var-one{
+            svg{
+                width: 110px;
+            }
+        }
+        &__col{
+            width: calc(50% - 20px);
+            &:nth-child(2){
+                max-width: calc(50% - 20px);
+            }
+        }
+        .title{
+        }
+    }
+    
+    @include sm{
+        &__img{
+            height: 600px;
+        }
+        &__svg{
+            svg{
+                top: 23px;
+                left: -13px;
+                width: 55px;
+                height: 50px;
+            }
+        }
+        
+    }
+    @media (max-width: 657px){
+        flex-direction: column;
+        &__img{
+            width: 100%;
+            height: 400px;
+        }
+        &__col{
+            width: 100%;
+            max-width: 100%;
+            &:nth-child(2){
+                width: 100%;
+                max-width: 100%;
+                row-gap: 50px;
+            }
+        }
+        
+        &__var-one{
+            svg{
+                width: 95px;
+                top: -20px;
             }
         }
     }
