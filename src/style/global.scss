@@ -35,7 +35,7 @@
 
 .subtitle{ 
     color: rgba(255, 255, 255, 0.70);
-    font-size: 22px;
+    font-size: calc(18px + 4 * ((100vw - 320px) / (1920 - 320)));
     font-style: normal;
     font-weight: 150%;
 }
@@ -51,6 +51,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 158.824%;
+    @include xs{
+        padding: 8px 15px;
+    }
     &_animation{
         transition: all .3s;
         position: relative;
