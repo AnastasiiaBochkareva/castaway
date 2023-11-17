@@ -8,10 +8,10 @@ mixin Product-card(param={})
       .product-card__episode=param.episode
       .product-card__title.title=param.title
       .product-card__subtitle.subtitle=param.subtitle
-      button.button.product-card__btn.button_animation View Episode Details
-    .product-card__info
-      button.product-card__info_btn 
-        img(src="/assets/img/contents/arrow-right.png", alt="")
-      .product-card__content 
-        .product-card__subtitle.title-sm=param.subtitle
+      button.button.product-card__btn.button_animation.btn__show View Episode Details
+      .product-card__info
+        button.product-card__info_btn.btn__show 
+          img(src="/assets/img/contents/arrow-right.png", alt="")
+        .product-card__content 
+          .product-card__subtitle.title-sm=param.subtitle
           

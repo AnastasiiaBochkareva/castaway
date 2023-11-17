@@ -5,11 +5,11 @@
     justify-content: space-between;
     &__col{
         &:nth-child(1){
-            width: calc(50% - 2vw);
+            width: calc(50% - 3vw);
         }
         &:nth-child(2){
             // max-width: 650px;
-            width: calc(50% - 2vw);
+            width: calc(50% - 3vw);
             min-width: max-content;
             display: flex;
             justify-content: flex-end;

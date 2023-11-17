@@ -59,8 +59,6 @@
         &_btn{
             border-radius: 400px;
             width: 5.83vw;
-            height: 5.83vw;
-            margin-bottom: 20px;
             display: flex;
             img{
                 width: 3.7vw;
@@ -123,14 +121,26 @@
         &__content{
             padding: 24vw 1vw;
         }
-    }
-    @media (max-width: 450px){
-        &__img{
+        &__info{
+          margin-top: 20px;
         }
     }
 }
-.product-card__info.active{
-  display: flex;
-  background-color: black;
-  z-index: 1;
+
+// .product-card.active > *:not(.product-card__info){
+//   display: none;
+//   
+// }
+
+.product-card__col.active {
+	>* {
+		&:not(.product-card__info) {
+			display: none;
+		}
+	}
+  .product-card__info{
+        display: flex;
+        background-color: black;
+        color: white;
+      }
 }
